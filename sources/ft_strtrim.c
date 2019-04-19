@@ -3,17 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/27 16:46:26 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/27 16:46:29 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/19 14:14:16 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Function trims whitespaces from both left and right side of the string.
-** Returns a new string.
-** \0 means end of string.
+** Allocates (with malloc(3)) and returns a copy of the string,
+** given as argument without whitespaces,
+** at the beginning or at the end of the string.
+** Will be considered as whitespaces the following characters
+** ’ ’, ’\n’ and ’\t’. If s has no whites- paces at the beginning or at the end,
+** the function returns a copy of s.
+** If the allocation fails the function returns NULL.
 */
 
 #include "../includes/libft.h"

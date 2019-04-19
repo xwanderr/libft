@@ -3,15 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 12:43:26 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/28 12:43:29 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/19 14:15:33 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Function returns a new string, which is a subpart of another string.
+** Allocates (with malloc(3)) and returns a “fresh” substring
+** from the string given as argument.
+** The substring begins at indexstart and is of size len.
+** If start and len aren’t refer- ing to a valid substring,
+** the behavior is undefined.
+** If the allocation fails, the function returns NULL.
 */
 
 #include "../includes/libft.h"
