@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/27 14:22:00 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/27 14:22:02 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/19 14:10:04 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,24 +15,27 @@
 */
 
 #include "../includes/libft.h"
-#include <stdio.h>
+
 static unsigned short int	ft_numwords(const char *string, unsigned char c)
 {
 	unsigned short int		i;
 	unsigned short int		numwords;
 
-	i = 0;
+	i = ft_strlen(string);
 	numwords = 0;
-	while (string[i])
+	if (!ft_strchr(string, c) || !i)
+		return (0);
+	i--;
+	while (i)
 	{
-		while (string[i] == c)
-			i++;
-		if (string[i] != '\0')
+		while (string[i] == c && i)
+			i--;
+		if ((int)i >= 0)
 			numwords++;
 		else
 			break;
-		while (string[i] != c)
-			i++;
+		while (string[i] != c && i)
+			i--;
 	}
 	return (numwords);
 }
