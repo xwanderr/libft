@@ -3,32 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 14:41:28 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/25 15:32:13 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/19 22:55:09 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+**	The functions strchr() and strrchr() return a pointer
+**  to the located character, or NULL if the character does
+**  not appear in the string.
+*/
+
+#include "../includes/libft.h"
 
 char	*ft_strrchr(const char *str, int c)
 {
-	char	x;
-	char	*res;
-	int		i;
+	short int		i;
 
-	res = NULL;
-	i = ft_strlen(str);
-	x = (char)c;
-	while (i >= 0)
+	if (str)
 	{
-		if (str[i] == x)
-		{
-			res = (char*)&str[i];
-			return (res);
-		}
-		i--;
+		i = ft_strlen(str) + 1;
+		while (--i >= 0)
+			if (str[i] == c)
+				return ((char*)&str[i]);
 	}
 	return (NULL);
 }

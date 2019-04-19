@@ -3,14 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 15:29:04 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/25 15:29:07 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/19 22:59:53 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {
@@ -20,18 +18,19 @@ char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 	if (*s2 == '\0')
 		return ((char*)s1);
 	i = 0;
-	while (s1[i] != '\0' && i < len)
-	{
-		j = 0;
-		while (s2[j] == s1[i + j])
+	if (s1 && s2 && len > 0)
+		while (s1[i] != '\0' && i < len)
 		{
-			if (i + j == len)
-				return (0);
-			if (s2[j + 1] == '\0')
-				return ((char*)&s1[i]);
-			j++;
+			j = 0;
+			while (s2[j] == s1[i + j])
+			{
+				if (i + j == len)
+					return (0);
+				if (s2[j + 1] == '\0')
+					return ((char*)&s1[i]);
+				j++;
+			}
+			i++;
 		}
-		i++;
-	}
 	return (0);
 }
