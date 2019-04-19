@@ -20,7 +20,7 @@
 # include <sys/stat.h>
 # include <fcntl.h>
 # define M int		i;int		a;int		b;char	**res;
-# define L if (!s) return (NULL);
+// # define L if (!s) return (NULL);
 # define X 	int			i;int			tmp;long int	res;int		negative;
 
 typedef struct		s_list
@@ -31,7 +31,9 @@ typedef struct		s_list
 }					t_list;
 
 unsigned char		ft_swap_bits(unsigned char octet);
+unsigned char		*ft_strndup(const char *src, unsigned short int length);
 int					ft_rot_13(char c);
+unsigned short int	ft_isspace(unsigned short int c);
 void				ft_putendl(char const *s);
 void				ft_putnbr(int n);
 void				ft_strdel(char **as);

@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_swap_bits.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/10/25 15:27:00 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/25 15:27:05 by ysizarie         ###   ########.fr       */
+/*   Created: 2018/11/02 17:55:05 by ysizarie          #+#    #+#             */
+/*   Updated: 2018/11/02 17:55:17 by ysizarie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Function swaps first and last 4 bits in the char.
+*/
 
-char	*ft_strdup(const char *src)
+unsigned char	ft_swap_bits(unsigned char octet)
 {
-	char	*s;
-	int		len;
-
-	len = 0;
-	while (src[len])
-		++len;
-	if (!(s = (char *)malloc(sizeof(char) * (len + 1))))
-		return (NULL);
-	s[len] = '\0';
-	while (len >= 0)
-	{
-		s[len] = src[len];
-		len--;
-	}
-	return (s);
+	return ((octet >> 4) | (octet << 4));
 }

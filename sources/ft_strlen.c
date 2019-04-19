@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap_bits.c                                     :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/02 17:55:05 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/11/02 17:55:17 by ysizarie         ###   ########.fr       */
+/*   Created: 2018/10/25 15:27:43 by ysizarie          #+#    #+#             */
+/*   Updated: 2018/10/25 18:16:26 by ysizarie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
-unsigned char	ft_swap_bits(unsigned char octet)
+size_t		ft_strlen(const char *s)
 {
-	return ((octet >> 4) | (octet << 4));
+	size_t	count;
+
+	count = -1;
+	while (s[++count] != '\0')
+		;
+	return (count);
 }

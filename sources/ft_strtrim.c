@@ -10,33 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Function trims whitespaces from both left and right side of the string.
+** Returns a new string.
+** \0 means end of string.
+*/
+
+#include "../includes/libft.h"
 
 char	*ft_strtrim(const char *s)
 {
-	int		i;
-	char	*str;
-	int		len;
-	int		temp;
+	unsigned char			*string;
+	unsigned short int		length;
 
-	i = 0;
-	len = 0;
-	temp = 0;
-	L;
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
-		i++;
-	if (s[i] == '\0')
-		return (ft_memalloc(sizeof(char) * 2));
-	len = ft_strlen(s) - 1;
-	while (s[len] == ' ' || s[len] == '\n' || s[len] == '\t')
-		len--;
-	if (!(str = (char*)malloc(sizeof(char) * (len - i + 2))))
-		return (NULL);
-	while (temp < len - i + 1)
+	if (s)
 	{
-		str[temp] = s[i + temp];
-		temp++;
+		length = ft_strlen(s);
+		if (!length)
+			return (NULL);
+		while (ft_isspace(s[length - 1]) && length--)
+			;
+		while (ft_isspace(*s) && length--)
+			s++;
+		string = ft_strndup(s, length);
+		if (!string || !length)
+			return (NULL);
+		return ((char*)string);
 	}
-	str[temp] = '\0';
-	return (str);
+	return (NULL);
 }
