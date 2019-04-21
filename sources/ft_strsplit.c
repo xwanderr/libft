@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: admin <admin@student.42.fr>                +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/27 14:22:00 by ysizarie          #+#    #+#             */
-/*   Updated: 2019/04/19 14:10:04 by admin            ###   ########.fr       */
+/*   Updated: 2019/04/21 14:05:01 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,6 +75,8 @@ char						**ft_strsplit(const char *s, char c)
 		if (i > j)
 		{
 			words[t] = (char*)ft_strndup(s + j, i - j);
+			if (!words[t][0])
+				words[t] = NULL;
 			t++;
 		}
 	}
