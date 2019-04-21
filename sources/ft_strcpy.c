@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 15:26:22 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/25 15:26:25 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/21 23:00:53 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/****/
 
 char	*ft_strcpy(char *dest, const char *src)
 {
