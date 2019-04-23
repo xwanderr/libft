@@ -6,7 +6,7 @@
 /*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 15:25:25 by ysizarie          #+#    #+#             */
-/*   Updated: 2019/04/23 20:54:48 by admin            ###   ########.fr       */
+/*   Updated: 2019/04/23 23:12:51 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strcat(char *dest, const char *src)
 
 	i = 0;
 	k = 0;
-	if (!dst || !src)
+	if (!dest || !src)
 		return (NULL);
 	while (*(dest + i))
 		i++;
