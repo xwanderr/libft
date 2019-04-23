@@ -6,9 +6,14 @@
 /*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 15:22:12 by ysizarie          #+#    #+#             */
-/*   Updated: 2019/04/21 19:41:41 by admin            ###   ########.fr       */
+/*   Updated: 2019/04/23 23:07:53 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** The bzero() function writes n zeroed bytes to the string s.
+** If n is zero, bzero() does nothing.
+*/
 
 #include "../includes/libft.h"
 

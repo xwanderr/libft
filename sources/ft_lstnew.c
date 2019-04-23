@@ -3,14 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 12:15:03 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/28 12:15:05 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/23 22:55:16 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Allocates and returns a “fresh” link.
+** The variables content and content_size of the new link are initialized
+** by copy of the parameters of the function. If the pa- rameter content is nul,
+** the variable content is initialized to NULL and the variable content_size is
+** initialized to 0 even if the parameter content_size isn’t. The variable next
+** is initialized to NULL. If the allocation fails, the function returns NULL.
+*/
+
+#include "../includes/libft.h"
 
 t_list	*ft_lstnew(void const *content, size_t content_size)
 {

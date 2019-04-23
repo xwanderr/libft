@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 12:42:21 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/29 16:26:04 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/23 23:04:49 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Function converts integer to ascii char.
+*/
+
+#include "../includes/libft.h"
 
 static long	int		ft_abs(long int nb)
 {

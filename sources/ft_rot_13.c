@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rot_13.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/02 17:54:20 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/11/02 17:54:27 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/23 20:54:08 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Function shifts a letter on 13 positions in alphabetical order.
+*/
 
 int		ft_rot_13(char c)
 {

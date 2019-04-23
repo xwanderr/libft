@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/27 14:20:52 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/27 14:20:54 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/23 21:25:01 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Outputs the character c to the standard output.
+*/
+
+#include "../includes/libft.h"
 
 void	ft_putchar(char c)
 {

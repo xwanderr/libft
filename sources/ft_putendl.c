@@ -3,27 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/27 14:22:21 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/27 14:22:23 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/23 21:22:02 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Outputs the string s to the standard output followed by a ’\n’.
+*/
+
+#include "../includes/libft.h"
 
 void	ft_putendl(char const *s)
 {
-	int		i;
-
 	if (s)
 	{
-		i = 0;
-		while (s[i] != '\0')
-		{
-			write(1, &s[i], 1);
-			i++;
-		}
+		write(STDOUT_FILENO, s, ft_strlen(s));
 		ft_putchar('\n');
 	}
 }

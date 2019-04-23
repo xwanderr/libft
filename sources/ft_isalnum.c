@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 15:22:35 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/25 15:22:46 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/23 23:07:16 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Function checks whether char is digit or letter.
+*/
 
 int	ft_isalnum(int c)
 {

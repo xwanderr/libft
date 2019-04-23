@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 15:22:57 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/25 15:23:01 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/23 23:07:00 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Function checks whether char is letter or not.
+*/
 
 int	ft_isalpha(int c)
 {

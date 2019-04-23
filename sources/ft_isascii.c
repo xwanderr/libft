@@ -3,12 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 15:23:10 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/25 15:23:17 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/23 23:06:39 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Function checks whether char is in ascii table char or not.
+*/
 
 int	ft_isascii(int c)
 {

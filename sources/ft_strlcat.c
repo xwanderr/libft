@@ -6,7 +6,7 @@
 /*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 15:27:24 by ysizarie          #+#    #+#             */
-/*   Updated: 2019/04/21 22:24:07 by admin            ###   ########.fr       */
+/*   Updated: 2019/04/23 20:48:20 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ size_t		ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	dstlength;
 	size_t	srclength;
 
+	if (!dst || !src)
+		return (0);
 	i = ft_strlen((const char*)dst);
 	k = 0;
 	dstlength = ft_strlen((const char*)dst);

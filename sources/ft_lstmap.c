@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysizarie <ysizarie@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 17:00:48 by ysizarie          #+#    #+#             */
-/*   Updated: 2018/10/28 17:00:50 by ysizarie         ###   ########.fr       */
+/*   Updated: 2019/04/23 22:56:22 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/*
+** Iterates a list lst and applies the function f to each link to create
+** a “fresh” list resulting from the suc- cessive applications of f.
+** If the allocation fails, the function returns NULL.
+*/
+
+#include "../includes/libft.h"
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
