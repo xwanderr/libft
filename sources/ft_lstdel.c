@@ -6,7 +6,7 @@
 /*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/28 15:23:06 by ysizarie          #+#    #+#             */
-/*   Updated: 2019/04/23 23:01:19 by admin            ###   ########.fr       */
+/*   Updated: 2019/04/23 23:11:28 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 	t_list *current;
 
 	current = *alst;
-	while (alst && current && f)
+	while (alst && current && del)
 	{
 		del(current->content, current->content_size);
 		free(current);
