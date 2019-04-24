@@ -6,7 +6,7 @@
 /*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 16:13:45 by ysizarie          #+#    #+#             */
-/*   Updated: 2019/04/21 13:28:06 by admin            ###   ########.fr       */
+/*   Updated: 2019/04/24 15:33:02 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,6 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 # include <fcntl.h>
-# define M int		i;int		a;int		b;char	**res;
-// # define L if (!s) return (NULL);
-# define X 	int			i;int			tmp;long int	res;int		negative;
 
 typedef struct		s_list
 {
