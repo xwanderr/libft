@@ -6,7 +6,7 @@
 /*   By: admin <admin@student.unit.ua>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 15:21:54 by ysizarie          #+#    #+#             */
-/*   Updated: 2019/04/23 23:08:58 by admin            ###   ########.fr       */
+/*   Updated: 2019/04/24 15:40:36 by admin            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,22 @@
 
 int		ft_atoi(const char *str)
 {
-	X;
+	short int	i;
+	int			tmp;
+	long int	res;
+	short int	negative;
+
 	i = 0;
 	tmp = 0;
 	res = 0;
-	negative = 1;
-	while (str[i] == '\n' || str[i] == ' ' || str[i] == '\t'
-		|| str[i] == '\r' || str[i] == '\f' || str[i] == '\v')
+	while (ft_isspace(str[i]))
 		i++;
-	if (str[i] == '-')
-		negative = -1;
-	if (str[i] == '+' || str[i] == '-')
-		i++;
+	negative = (str[i] == '-') ? -1 : 1;
+	i = (str[i] == '+' || str[i] == '-') ? i + 1 : i;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		res = (res * 10) + (str[i] - '0');
-		if (res != 0)
-			tmp++;
+		tmp = (res != 0) ? tmp + 1 : tmp;
 		i++;
 	}
 	if (tmp > 19 && negative == -1)
